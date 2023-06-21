@@ -1,0 +1,13 @@
+.game-board {
+    width: 34rem;
+    height: 34rem;
+    background-color: #cfcccc;
+    //margin: 0 auto;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    border-radius: 0.375rem;
+    gap: 1rem;
+    padding: 1rem;
+    position: relative;
+    margin-left: 26rem;
+}

@@ -1,0 +1,73 @@
+.side-bar {
+    width: 18.8rem;
+    height: 34rem;
+    background-color: #c4b9ac;
+    position: absolute;
+    bottom: 0;
+    right: 0.8rem;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #362b21;
+
+    h3 {
+        font-weight: 900;
+        color: #3f3225;
+    }
+
+    input[type='text'] {
+        border: 0.1rem solid #a88765;
+        padding: 0.1rem 0.375rem;
+        width: 8.75rem;
+        border-radius: 0.375rem;
+        outline: none;
+    }
+
+    .algorithm-selection {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.375rem;
+    }
+
+    .pause-button {
+
+        Button {
+            width: 4.375rem;
+            height: 1.5rem;
+            padding: 0.625rem 2.2rem;
+            border-radius: 0.625rem;
+            font-size: 0.875rem;
+            margin-top: 0.75rem;
+        }
+    }
+
+    .options-bar {
+
+        Button {
+            height: 1.875rem;
+            padding: 0.625rem 2.2rem;
+            border-radius: 0.9rem;
+            font-size: 1.25rem;
+        }
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        Button {
+            margin: 0 auto;
+            display: block;
+            margin-top: 0.9rem;
+            width: 4.375rem;
+            height: 1.5rem;
+            padding: 0.625rem 2.2rem;
+            border-radius: 0.625rem;
+            font-size: 0.875rem;
+        }
+    }
+}
