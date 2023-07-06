@@ -20,10 +20,7 @@ const SideBar = () => {
     setMaxDepth,
     algorithm,
     setAlgorithm,
-    numberOfIterations,
     setNumberOfIterations,
-
-    setChangeWhenOver,
   } = useContext(AiContext);
 
   const { count, setCount, setTrial, gameOver } = useContext(GameStateContext);
@@ -41,9 +38,6 @@ const SideBar = () => {
   };
 
   const handleChange = (event) => {
-    if (gameOver) {
-      setChangeWhenOver(true);
-    }
     setAlgorithm(event.target.value);
   };
 
