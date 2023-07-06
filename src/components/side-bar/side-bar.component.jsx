@@ -56,7 +56,6 @@ const SideBar = () => {
 
   const applyChange = () => {
     if (gameOver) {
-      setChangeWhenOver(true);
       if (+config.numberOfPlays > 0) {
         setTrial(+config.numberOfPlays);
       }

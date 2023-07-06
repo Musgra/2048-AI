@@ -1,41 +1,39 @@
-import { average } from "./average";
 import { monotonicity } from "./monotonicity";
 import { smoothness } from "./smoothness";
-// import { snake } from "./snake";
 import { possibleMerge } from "./possibleMerge";
 
 
-const weightedMatrix = [[4, 3, 2, 1],
-                        [5, 6, 7, 8],
-                        [12, 11, 10, 9],
-                        [100, 300, 600, 1200]];
+// const weightedMatrix = [[4, 3, 2, 1],
+//                         [5, 6, 7, 8],
+//                         [12, 11, 10, 9],
+//                         [100, 300, 600, 1200]];
 
 
-const calculateBoard = board => {
-    let result = 0;
-    for (let row = 0; row < 4; row++) {
-        for (let col = 0; col < 4; col++) {
-            if (board[row][col] !== 0) {
-                result += weightedMatrix[row][col] * board[row][col];
-            }
-        }
-    }
+// const calculateBoard = board => {
+//     let result = 0;
+//     for (let row = 0; row < 4; row++) {
+//         for (let col = 0; col < 4; col++) {
+//             if (board[row][col] !== 0) {
+//                 result += weightedMatrix[row][col] * board[row][col];
+//             }
+//         }
+//     }
 
-    return result;
-}
+//     return result;
+// }
 
-const maxValue = board => {
-    let max = 0;
-    for (let row = 0; row < 4; row++) {
-        for (let col = 0; col < 4; col++) {
-            if (board[row][col] > max) {
-                max = board[row][col];
-            }
-        }
-    }
+// const maxValue = board => {
+//     let max = 0;
+//     for (let row = 0; row < 4; row++) {
+//         for (let col = 0; col < 4; col++) {
+//             if (board[row][col] > max) {
+//                 max = board[row][col];
+//             }
+//         }
+//     }
 
-    return Math.log2(max);
-}
+//     return Math.log2(max);
+// }
 
 const emptyTiles = board => {
     let emptyTilesNumber = 0;
