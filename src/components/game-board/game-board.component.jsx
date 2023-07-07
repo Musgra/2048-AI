@@ -308,7 +308,6 @@ const GameBoard = () => {
     algorithm,
     numberOfIterations,
     simulationDepth,
-    maxDepth,
     setRecord,
     maxTile,
     bestRecord,
